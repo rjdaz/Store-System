@@ -1,0 +1,60 @@
+.container-Login {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px;
+    background-color: #55679C;
+    /* temp */
+    z-index: -1;
+    opacity: 0;
+}
+
+.headerLogIn {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 25pt;
+    color: #7C93C3;
+}
+
+.inputUsername {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.username, .password {
+    width: 80%;
+    height: 40%;
+    padding-left: 5%;
+    border: none;
+    color: #1E2A5E;
+}
+
+.btnLogIn {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.btnLogIn button {
+    width: 50%;
+    height: 40%;
+    color: #E1D7B7;
+    background-color: #1E2A5E;
+}
+
+.errorMsg {
+    width: 100%;
+    text-align: center;
+    color: #E1D7B7;
+    font-size: 14pt;
+}
