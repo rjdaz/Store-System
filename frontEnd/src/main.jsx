@@ -4,9 +4,11 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css'
 import App from './App.jsx'
 
+const PUBLIC_URL = import.meta.env.VITE_PUBLIC_URL || '/Store-Management-System/';
+
 createRoot(document.getElementById('root')).render( 
   <StrictMode>
-    <BrowserRouter basename="/Store-System">
+    <BrowserRouter basename={PUBLIC_URL}>
       <App />
     </BrowserRouter>
   </StrictMode>
