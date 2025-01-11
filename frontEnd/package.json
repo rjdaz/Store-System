@@ -2,7 +2,7 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://rjdaz.github.io/Store-System",
+  "homepage": "https://rjdaz.github.io/Store-System/",
   "type": "module",
   "scripts": {
     "dev": "vite",

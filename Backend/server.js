@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
 
 //create
-app.post('/prod', (req, res) => {
+app.post('/store', (req, res) => {
     const { name, investment, num_invest, wholesale, num_wsale, retail, num_retail } = req.body;
 
     const sqlInsert = "INSERT INTO store (name, investment, num_invest, wholesale, num_wsale, retail, num_retail) VALUES (?,?,?,?,?,?,?)";
@@ -42,7 +42,7 @@ app.post('/prod', (req, res) => {
 });
 
 //read
-app.get('/prod', (req, res) => {
+app.get('/store', (req, res) => {
     const sqlSelect = "SELECT * FROM store";
     db.query(sqlSelect, (err, result) => {
         if (err) {
@@ -54,7 +54,7 @@ app.get('/prod', (req, res) => {
 });
 
 //update
-app.patch('/prod/:id', (req, res) => {
+app.patch('/store/:id', (req, res) => {
     const { id } = req.params;
     const { name, investment, num_invest, wholesale, num_wsale, retail, num_retail } = req.body;
 
@@ -69,7 +69,7 @@ app.patch('/prod/:id', (req, res) => {
 });
 
 //delete
-app.delete('/prod/:id', (req, res) => {
+app.delete('/store/:id', (req, res) => {
     const { id } = req.params;
     const sqlDelete = "DELETE FROM store WHERE id = ?";
     db.query(sqlDelete, [id], (err, result) => {
