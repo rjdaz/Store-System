@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import LogIn from "./components/LogIn.jsx";
 import MainWindow from "./components/mainwindow.jsx";
 
 function App() {
