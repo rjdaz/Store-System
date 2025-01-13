@@ -6,7 +6,7 @@ import MainWindow from "./components/mainwindow.jsx"
 function App() {
   const [data, setData] = React.useState([]);
   useEffect(() => {
-    fetch("https://store-system-3kic.onrender.com/prod")
+    fetch("https://store-system-3kic.onrender.com/store")
       .then(response => response.json())
       .then(data => setData(data))
       .catch(err => console.error(err));

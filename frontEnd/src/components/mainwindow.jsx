@@ -17,7 +17,7 @@ function MainWindow({ style }) {
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     useEffect(() => {
-        fetch('https://store-system-3kic.onrender.com/prod')
+        fetch('https://store-system-3kic.onrender.com/store')
             .then(response => response.json())
             .then(data => setDataList(data))
             .catch(error => console.error('Error fetching data:', error));
@@ -176,7 +176,7 @@ function MainWindow({ style }) {
                                     return;
                                 }
                         
-                                fetch('https://store-system-3kic.onrender.com/prod')
+                                fetch('https://store-system-3kic.onrender.com/store')
                                     .then(response => response.json())
                                     .then(data => {
                                         let findMatchProd = data.find(product => product.name === newProdItem);
@@ -184,7 +184,7 @@ function MainWindow({ style }) {
                                         if (findMatchProd) {
                                             alert('Already have that Product Name');
                                         } else {
-                                            fetch('https://store-system-3kic.onrender.com/prod', {
+                                            fetch('https://store-system-3kic.onrender.com/store', {
                                                 method: 'POST',
                                                 headers: {
                                                     'Content-Type': 'application/json'
