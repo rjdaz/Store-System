@@ -6,13 +6,13 @@ function MainWindow({ style }) {
 
     const [dataList, setDataList] = useState([]);
     const [inputSearch, setInputSearch] = useState(''); // for searching data
-    const [inputNewProd, setInputNewProd] = useState(''), // data input
-          [inputInvest, setInputInvest] = useState(''),
-          [inputInvestNum, setInputInvestNum] = useState(''),
-          [inputWholeSale, setInputWholeSale] = useState(''),
-          [inputWholeSaleNum, setInputWholeSaleNum] = useState(''),
-          [inputRetail, setInputRetail] = useState(''),
-          [inputRetailNum, setInputRetailNum] = useState('')
+    const [inputNewProd, setInputNewProd] = useState(''); // data input
+    const [inputInvest, setInputInvest] = useState('');
+    const [inputInvestNum, setInputInvestNum] = useState('');
+    const [inputWholeSale, setInputWholeSale] = useState('');
+    const [inputWholeSaleNum, setInputWholeSaleNum] = useState('');
+    const [inputRetail, setInputRetail] = useState('');
+    const [inputRetailNum, setInputRetailNum] = useState('');
 
     const [selectedProduct, setSelectedProduct] = useState(null);
 
