@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import LogIn from "./components/LogIn.js"
-import MainWindow from ""
+import MainWindow from "./components/mainwindow.jsx";
 
 function App() {
   const [data, setData] = React.useState([]);
